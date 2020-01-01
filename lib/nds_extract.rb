@@ -13,7 +13,8 @@ def directors_totals(nds)
   row_index = 0
   while row_index < nds.length do 
     current_row = nds[row_index]
-    current_key = nds[row_index][0]
+    current_key = current_row[0]
+    
     
   end
   #
