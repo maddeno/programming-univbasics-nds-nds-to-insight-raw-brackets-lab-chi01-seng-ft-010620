@@ -8,14 +8,18 @@ def directors_totals(nds)
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {}
-  current_key = nil
-  current_value = 0 
   row_index = 0
   while row_index < nds.length do 
-    current_row = nds[row_index]
-    current_key = current_row[0]
-    current_movies = current_row[current_key]
-    
+    current_gross = 0 
+    current_director = nds[row_index]
+    director_name = current_director[0]
+    current_movies = current_director[director_name]
+    column_index = 0 
+    while column_index < current_movies.length do 
+      puts current_movies[column_index]
+      column_index += 1 
+    end
+    row_index += 1 
   end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
