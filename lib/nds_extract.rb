@@ -12,6 +12,7 @@ def directors_totals(nds)
   current_value = 0 
   row_index = 0
   while row_index < nds.length do 
+    current_row = nds[row_index]
     current_key = nds[row_index][0]
     
   end
