@@ -14,7 +14,7 @@ def directors_totals(nds)
   while row_index < nds.length do 
     current_row = nds[row_index]
     current_key = current_row[0]
-    
+    current_movies = current_row[current_key]
     
   end
   #
