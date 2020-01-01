@@ -7,8 +7,14 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  result = {
-  }
+  result = {}
+  current_key = nil
+  current_value = 0 
+  row_index = 0
+  while row_index < nds.length do 
+    current_key = nds[row_index][0]
+    
+  end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
@@ -18,5 +24,5 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  result
 end
