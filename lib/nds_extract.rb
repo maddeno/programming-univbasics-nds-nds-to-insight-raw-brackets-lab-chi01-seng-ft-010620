@@ -11,14 +11,15 @@ def directors_totals(nds)
   row_index = 0
   while row_index < nds.length do 
     current_gross = 0 
+    puts nds[row_index]
     current_director = nds[row_index]
     director_name = current_director[0]
     current_movies = current_director[director_name]
     column_index = 0 
-    while column_index < current_movies.length do 
-      puts current_movies[column_index]
-      column_index += 1 
-    end
+    #while column_index < current_movies.length do 
+      #puts current_movies[column_index]
+     # column_index += 1 
+    #end
     row_index += 1 
   end
   #
