@@ -16,8 +16,13 @@ def directors_totals(nds)
     current_movies = current_row[:movies]
     column_index = 0 
     while column_index < current_movies.length do 
-      puts current_movies[column_index]
+      current_gross += current_movies[:worldwide_gross]
       column_index += 1 
+    end
+    if result[director_name] == nil 
+      result[director_name] = current_gross
+    else 
+      result[director_name] += current_gross
     end
     row_index += 1 
   end
